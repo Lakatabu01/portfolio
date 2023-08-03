@@ -5,7 +5,8 @@ body {
   padding: 0;
   margin: 0%;
   box-sizing: border-box;
-  overflow: hidden;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 nav {
@@ -26,6 +27,7 @@ header {
   display: flex;
   align-items: center;
   padding: 0 0 0 4em;
+  width: 100vw;
 }
 
 .nav-button {
@@ -37,4 +39,21 @@ header {
 .nav-button:hover {
   cursor: pointer;
   color: #e600e6;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials > div {
+  padding-right: 2em;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+.intro {
+  padding: 2em;
+  width: 70vw;
 }
