@@ -1,0 +1,40 @@
+#root,
+body {
+  color: white;
+  background-color: black;
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+nav {
+  padding-left: 4em;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+li {
+  padding-right: 2em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 4em;
+}
+
+.nav-button {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  color: #e600e6;
+}
