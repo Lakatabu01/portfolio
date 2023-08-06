@@ -34,6 +34,7 @@ header {
   background-color: black;
   color: white;
   border-color: black;
+  font-size: 14px;
 }
 
 .nav-button:hover {
@@ -43,6 +44,7 @@ header {
 
 .socials {
   display: flex;
+  margin-top: -2em;
 }
 
 .socials > div {
@@ -54,6 +56,94 @@ h1 {
 }
 
 .intro {
-  padding: 2em;
+  padding: 0 2em 0 2em;
   width: 70vw;
+}
+
+.profile {
+  display: flex;
+  padding: 5rem 2em 2em 2em;
+  gap: 4em;
+  align-items: center;
+}
+
+.profile-text {
+  color: rgb(170, 170, 170);
+  font-size: 1.2em;
+}
+
+.image {
+  border-radius: 10%;
+}
+/* CSS */
+.resume-button,
+.hire-me-button {
+  border-radius: 100px;
+  padding: 0.5em;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: CircularStd, sans-serif;
+  font-size: 1rem;
+  height: auto;
+  line-height: 1.5;
+  transition: background-color 0.2s, background-position 0.2s;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.resume-button {
+  background-color: #1573dd;
+  border-color: #1573dd;
+}
+
+.resume-button:active,
+.resume-button:focus {
+  outline: none;
+}
+
+.resume-button:hover,
+.hire-me-button:hover {
+  background-position: -20px -20px;
+  background-color: #6996c9;
+}
+
+.resume-button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 0.125em;
+}
+
+.hire-me-button {
+  background-color: #272830;
+  border-color: #272830;
+}
+
+.white {
+  color: white;
+}
+
+.top-buttons {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.top-buttons button {
+  margin: 1em;
+}
+
+.projects {
+  padding: 2em;
+}
+
+.single-project {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 4em;
+  flex-direction: column;
+}
+
+.project-image {
+  border-radius: 5%;
 }
