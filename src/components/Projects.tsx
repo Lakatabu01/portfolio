@@ -13,6 +13,11 @@ import {
   waldo11,
 } from "./PhotoImports";
 import { cart, cart1, cart2, cart3, cart4, cart5 } from "./PhotoImports";
+import { card, card1, card2, card3, card4, card5, card6 } from "./PhotoImports";
+import { cv, cv1, cv2, cv3, cv4 } from "./PhotoImports";
+import { weather, weather1, weather2 } from "./PhotoImports";
+import { weather3, weather4, weather5 } from "./PhotoImports";
+import { tic, tic1, tic2, tic3 } from "./PhotoImports";
 
 const MyProjects: React.FC = () => {
   return (
@@ -82,31 +87,209 @@ const MyProjects: React.FC = () => {
           consectetur adipisicing elit. Magni, exercitationem?
         </p>
 
-        <img
-          className="project-image"
-          sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
-          srcSet={`
+        <div>
+          <div className="img-grp">
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
         ${cart} 200w,
         ${cart1} 615w,
         ${cart2} 800w
         `}
-          src={cart2}
-          alt=""
-        />
+              src={cart2}
+              alt=""
+            />
 
-        <img
-          className="project-image"
-          sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
-          srcSet={`
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
           ${cart3} 200w,
           ${cart4} 699w,
           ${cart5} 800w"
 `}
-          src={cart5}
-          alt="Screenshot of different products"
-        />
+              src={cart5}
+              alt="Screenshot of different products"
+            />
+          </div>
+
+          <div className="project-links">
+            <button className="code-btn">View code</button>
+            <p className="preview">Preview &#8594; </p>
+          </div>
+        </div>
       </section>
-      <section></section>
+
+      <section className="single-project">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
+          voluptates corrupti tempora aut totam itaque a quasi deserunt
+          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Magni, exercitationem?
+        </p>
+
+        <div>
+          <div className="img-grp">
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
+            ${card} 200w,
+            ${card1} 550w,
+            ${card2} 800w
+`}
+              src={card2}
+              alt="Photo of Memory card game"
+            />
+
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
+             ${card3} 200w,
+            ${card4} 485w,
+            ${card5} 711w,
+            ${card6} 800w
+`}
+              src={card6}
+              alt="Photo of Memory card game"
+            />
+          </div>
+
+          <div className="project-links">
+            <button className="code-btn">View code</button>
+            <p className="preview">Preview &#8594; </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="single-project">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
+          voluptates corrupti tempora aut totam itaque a quasi deserunt
+          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Magni, exercitationem?
+        </p>
+
+        <div>
+          <div className="img-grp">
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
+            ${cv} 200w,
+            ${cv1} 764w,
+            ${cv2} 800w
+`}
+              src={cv2}
+              alt="Resume of a Devops engineer"
+            />
+
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
+              ${cv3} 200w,
+              ${cv4} 800w"
+              `}
+              src={cv3}
+              alt=""
+            />
+          </div>
+
+          <div className="project-links">
+            <button className="code-btn">View code</button>
+            <p className="preview">Preview &#8594; </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="single-project">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
+          voluptates corrupti tempora aut totam itaque a quasi deserunt
+          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Magni, exercitationem?
+        </p>
+
+        <div>
+          <div className="img-grp">
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
+            ${weather} 200w,
+            ${weather1} 653w,
+            ${weather2} 800w
+`}
+              src={weather2}
+              alt="Screenshot of weaather app"
+            />
+
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
+              ${weather3} 200w,
+              ${weather4} 733w,
+              ${weather5} 800w
+`}
+              src={weather5}
+              alt=" screenshot of the input field of a weather"
+            />
+          </div>
+
+          <div className="project-links">
+            <button className="code-btn">View code</button>
+            <p className="preview">Preview &#8594; </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="single-project">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
+          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
+          voluptates corrupti tempora aut totam itaque a quasi deserunt
+          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Magni, exercitationem?
+        </p>
+
+        <div>
+          <div className="img-grp">
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
+              ${tic} 200w,
+              ${tic1} 800w
+`}
+              src={tic1}
+              alt="Screenshot of Tic-tac-toe-game"
+            />
+
+            <img
+              className="project-image"
+              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              srcSet={`
+              ${tic2} 200w,
+              ${tic3} 800w
+`}
+              src={tic1}
+              alt="Screenshot of Tic-tac-toe-game"
+            />
+          </div>
+
+          <div className="project-links">
+            <button className="code-btn">View code</button>
+            <p className="preview">Preview &#8594; </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

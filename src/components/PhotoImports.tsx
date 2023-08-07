@@ -27,3 +27,46 @@ import cart4 from "../assets/shopping-cart2/IMG-9500_hzjxew_c_scale,w_699.jpg";
 import cart5 from "../assets/shopping-cart2/IMG-9500_hzjxew_c_scale,w_800.jpg";
 
 export { cart3, cart4, cart5 };
+
+import card from "../assets/memory-card/IMG-9497_y3pmfd_c_scale,w_200.jpg";
+import card1 from "../assets/memory-card/IMG-9497_y3pmfd_c_scale,w_550.jpg";
+import card2 from "../assets/memory-card/IMG-9497_y3pmfd_c_scale,w_800.jpg";
+
+export { card, card1, card2 };
+
+import card3 from "../assets/memory-card2/IMG-9498_hgzaqp_c_scale,w_200.jpg";
+import card4 from "../assets/memory-card2/IMG-9498_hgzaqp_c_scale,w_485.jpg";
+import card5 from "../assets/memory-card2/IMG-9498_hgzaqp_c_scale,w_711.jpg";
+import card6 from "../assets/memory-card2/IMG-9498_hgzaqp_c_scale,w_800.jpg";
+
+export { card3, card4, card5, card6 };
+
+import cv from "../assets/cv/IMG-9495_pevh9m_c_scale,w_200.jpg";
+import cv1 from "../assets/cv/IMG-9495_pevh9m_c_scale,w_764.jpg";
+import cv2 from "../assets/cv/IMG-9495_pevh9m_c_scale,w_800.jpg";
+
+export { cv, cv1, cv2 };
+
+import cv3 from "../assets/cv2/IMG-9496_a5jq4i_c_scale,w_200.jpg";
+import cv4 from "../assets/cv2/IMG-9496_a5jq4i_c_scale,w_800.jpg";
+
+export { cv3, cv4 };
+
+import weather from "../assets/weather/IMG-9504_tiihts_c_scale,w_200.jpg";
+import weather1 from "../assets/weather/IMG-9504_tiihts_c_scale,w_653.jpg";
+import weather2 from "../assets/weather/IMG-9504_tiihts_c_scale,w_800.jpg";
+
+export { weather, weather1, weather2 };
+
+import weather3 from "../assets/weather2/IMG-9505_ohuxwi_c_scale,w_200.jpg";
+import weather4 from "../assets/weather2/IMG-9505_ohuxwi_c_scale,w_733.jpg";
+import weather5 from "../assets/weather2/IMG-9505_ohuxwi_c_scale,w_800.jpg";
+
+export { weather3, weather4, weather5 };
+
+import tic from "../assets/tic-tac-toe/IMG-9501_weg5tm_c_scale,w_200.jpg";
+import tic1 from "../assets/tic-tac-toe/IMG-9501_weg5tm_c_scale,w_800.jpg";
+import tic2 from "../assets/tic-tac-toe2/IMG-9494_buv0ls_c_scale,w_200.jpg";
+import tic3 from "../assets/tic-tac-toe2/IMG-9494_buv0ls_c_scale,w_800.jpg";
+
+export { tic, tic1, tic2, tic3 };
