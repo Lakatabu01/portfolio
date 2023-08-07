@@ -138,12 +138,51 @@ h1 {
 
 .single-project {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2em;
   margin-bottom: 4em;
-  flex-direction: column;
 }
 
 .project-image {
   border-radius: 5%;
+  padding: 1em;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 2em;
+}
+
+.preview {
+  font-size: large;
+  padding: 2em;
+}
+
+.preview:hover {
+  color: #e600e6;
+  cursor: pointer;
+}
+
+.code-btn {
+  cursor: pointer;
+  background-color: #272830;
+  border-color: #272830;
+  color: white;
+  max-height: 3em;
+  padding: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.code-btn:hover {
+  background-color: #6996c9;
+}
+
+.img-grp {
+  display: flex;
 }

@@ -21,3 +21,9 @@ import cart1 from "../assets/shopping-cart/IMG-9499_xqnae1_c_scale,w_615.jpg";
 import cart2 from "../assets/shopping-cart/IMG-9499_xqnae1_c_scale,w_800.jpg";
 
 export { cart, cart1, cart2 };
+
+import cart3 from "../assets/shopping-cart2/IMG-9500_hzjxew_c_scale,w_200.jpg";
+import cart4 from "../assets/shopping-cart2/IMG-9500_hzjxew_c_scale,w_699.jpg";
+import cart5 from "../assets/shopping-cart2/IMG-9500_hzjxew_c_scale,w_800.jpg";
+
+export { cart3, cart4, cart5 };
