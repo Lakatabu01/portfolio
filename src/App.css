@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/Roboto-Medium.ttf") format("ttf");
+}
+
 #root,
 body {
+  font-family: "roboto", sans-serif;
   color: white;
   background-color: black;
   padding: 0;
@@ -7,6 +13,10 @@ body {
   box-sizing: border-box;
   height: 100vh;
   overflow-x: hidden;
+}
+
+p:not(.default-line-spacing) {
+  line-height: 1.5;
 }
 
 nav {
@@ -52,7 +62,7 @@ header {
 }
 
 h1 {
-  font-size: 6em;
+  font-size: 5.5em;
 }
 
 .intro {
@@ -187,4 +197,34 @@ h1 {
 .img-grp {
   display: flex;
   padding-bottom: 1em;
+}
+
+.devicons {
+  height: 3em;
+  width: 3em;
+}
+
+.skills {
+  padding: 2em;
+}
+
+.skill-grp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.each-skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+.blog-posts {
+  padding: 2em;
 }

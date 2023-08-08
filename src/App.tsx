@@ -4,6 +4,8 @@ import Intro from "./components/Intro";
 import Profile from "./components/Profile";
 import Buttons from "./components/TopButtons";
 import MyProjects from "./components/Projects";
+import Skills from "./components/Skills";
+import BlogPosts from "./components/BlogPosts";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Profile />
         <Buttons />
         <MyProjects />
+        <Skills />
+        <BlogPosts />
       </main>
     </div>
   );

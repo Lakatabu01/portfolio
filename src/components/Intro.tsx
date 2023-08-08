@@ -4,7 +4,7 @@ const Intro = () => {
   return (
     <section className="intro">
       <div>
-        <h1>
+        <h1 className="default-line-spacing">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
           maiores!
         </h1>
