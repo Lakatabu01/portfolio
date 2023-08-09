@@ -150,7 +150,7 @@ h1 {
   display: flex;
   align-items: flex-start;
   gap: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .project-image {
@@ -205,7 +205,7 @@ h1 {
 }
 
 .skills {
-  padding: 2em;
+  padding: 1em 2em 2em 2em;
 }
 
 .skill-grp {
@@ -227,4 +227,25 @@ h2 {
 
 .blog-posts {
   padding: 2em;
+}
+
+.blog-flex {
+  display: flex;
+  align-items: center;
+}
+
+.each-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  align-items: center;
+}
+
+.each-blog > p {
+  text-align: center;
+}
+
+.pic {
+  max-height: 20em; /* revisit!!!!!!!*/
 }

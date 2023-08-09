@@ -70,3 +70,12 @@ import tic2 from "../assets/tic-tac-toe2/IMG-9494_buv0ls_c_scale,w_200.jpg";
 import tic3 from "../assets/tic-tac-toe2/IMG-9494_buv0ls_c_scale,w_800.jpg";
 
 export { tic, tic1, tic2, tic3 };
+
+import Posts from "../assets/blog-post/sincerely-media-ylveRpZ8L1s-unsplash_u2iwok_c_scale,w_200.jpg";
+import Posts1 from "../assets/blog-post/sincerely-media-ylveRpZ8L1s-unsplash_u2iwok_c_scale,w_607.jpg";
+import Posts2 from "../assets/blog-post/sincerely-media-ylveRpZ8L1s-unsplash_u2iwok_c_scale,w_640.jpg";
+import Posts3 from "../assets/blog-post1/christopher-gower-m_HRfLhgABo-unsplash_ljib4l_c_scale,w_200.jpg";
+import Posts4 from "../assets/blog-post1/christopher-gower-m_HRfLhgABo-unsplash_ljib4l_c_scale,w_456.jpg";
+import Posts5 from "../assets/blog-post1/christopher-gower-m_HRfLhgABo-unsplash_ljib4l_c_scale,w_640.jpg";
+
+export { Posts, Posts2, Posts1, Posts3, Posts4, Posts5 };
