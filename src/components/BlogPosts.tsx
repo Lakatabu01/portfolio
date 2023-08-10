@@ -1,5 +1,6 @@
 import React from "react";
-import { Posts, Posts2, Posts1, Posts3, Posts4, Posts5 } from "./PhotoImports";
+import { Posts3, Posts4, Posts5 } from "./PhotoImports";
+import { posts6, posts7, posts8 } from "./PhotoImports";
 
 const BlogPosts: React.FC = () => {
   return (
@@ -12,18 +13,23 @@ const BlogPosts: React.FC = () => {
             className="project-image pic"
             sizes="(max-width: 600px) 80vw, (max-width: 1400px) 30vw, 800px"
             srcSet={`
-        ${Posts} 200w,
-        ${Posts1} 607w,
-        ${Posts2} 640w
+${Posts3} 200w,
+${Posts4} 456w,
+${Posts5} 640w
 `}
-            src={Posts2}
-            alt=""
+            src={Posts5}
+            alt="picture representing blog information"
           />
 
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-            ipsam.
-          </p>
+          <div className="blog-details">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              quibusdam.
+            </p>
+            <div>
+              <p className="preview">Preview &#8594; </p>
+            </div>
+          </div>
         </div>
 
         <div className="each-blog">
@@ -31,18 +37,23 @@ const BlogPosts: React.FC = () => {
             className="project-image pic"
             sizes="(max-width: 600px) 80vw, (max-width: 1400px) 30vw, 800px"
             srcSet={`
-${Posts3} 200w,
-${Posts4} 456w,
-${Posts5} 640w
+            ${posts6} 200w,
+            ${posts7} 501w,
+            ${posts8} 640w
 `}
-            src={Posts5}
-            alt=""
+            src={posts8}
+            alt="picture representing blog information"
           />
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-            quibusdam.
-          </p>
+          <div className="blog-details">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              quibusdam.
+            </p>
+            <div>
+              <p className="preview">Preview &#8594; </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

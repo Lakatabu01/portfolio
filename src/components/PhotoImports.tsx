@@ -79,3 +79,9 @@ import Posts4 from "../assets/blog-post1/christopher-gower-m_HRfLhgABo-unsplash_
 import Posts5 from "../assets/blog-post1/christopher-gower-m_HRfLhgABo-unsplash_ljib4l_c_scale,w_640.jpg";
 
 export { Posts, Posts2, Posts1, Posts3, Posts4, Posts5 };
+
+import posts6 from "../assets/blog-post3/chris-ried-ieic5Tq8YMk-unsplash_1_zezfs3_c_scale,w_200.jpg";
+import posts7 from "../assets/blog-post3/chris-ried-ieic5Tq8YMk-unsplash_1_zezfs3_c_scale,w_501.jpg";
+import posts8 from "../assets/blog-post3/chris-ried-ieic5Tq8YMk-unsplash_1_zezfs3_c_scale,w_640.jpg";
+
+export { posts6, posts7, posts8 };

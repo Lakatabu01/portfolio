@@ -1,11 +1,13 @@
 import React from "react";
 import "../App.css";
+import Icon from "@mdi/react";
+import { mdiStar } from "@mdi/js";
 
 const Header = () => {
   return (
     <header>
       <div>
-        <p>Logo</p>
+        <Icon path={mdiStar} size={1} />
       </div>
 
       <nav>

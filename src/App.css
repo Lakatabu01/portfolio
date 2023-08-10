@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
   height: 100vh;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 p:not(.default-line-spacing) {
@@ -38,6 +39,11 @@ header {
   align-items: center;
   padding: 0 0 0 4em;
   width: 100vw;
+  background-color: black;
+  position: sticky;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 
 .nav-button {
@@ -238,7 +244,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2em;
+  margin: 2em;
   align-items: center;
 }
 
@@ -248,4 +254,71 @@ h2 {
 
 .pic {
   max-height: 20em; /* revisit!!!!!!!*/
+}
+
+.blog-details {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-details > p {
+  text-align: center;
+}
+
+.glitch-div {
+  width: 100vw;
+  background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjZudWNwZ2djYWJ2aGNha2MyeHd5eWd1ejE4d2ppMmR2cmxzaGpobyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KJguq9IjQVGYU/giphy.gif");
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  background-position: center;
+  align-items: center;
+}
+
+footer {
+  width: 100vw;
+}
+
+.collaborate {
+  font-size: 3em;
+}
+
+.email-btn {
+  max-height: 3em;
+  background-color: black;
+  color: white;
+  padding: 2em;
+  border: 2px solid black;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.buy-coffee {
+  max-width: 35em;
+  margin: 8em 2em;
+}
+
+.buy-coffee > p {
+  font-size: 0.9em;
+}
+
+.last {
+  margin-top: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dancer {
+  height: 4em;
+}
+
+.coffee-txt {
+  color: rgb(170, 170, 170);
 }

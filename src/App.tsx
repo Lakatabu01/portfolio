@@ -6,6 +6,7 @@ import Buttons from "./components/TopButtons";
 import MyProjects from "./components/Projects";
 import Skills from "./components/Skills";
 import BlogPosts from "./components/BlogPosts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Skills />
         <BlogPosts />
       </main>
+      <Footer />
     </div>
   );
 }
