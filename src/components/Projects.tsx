@@ -23,10 +23,14 @@ import { tic, tic1, tic2, tic3 } from "./PhotoImports";
 const MyProjects: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const targetElementRef = useRef<HTMLDivElement | null>(null);
+  const targetElementRef1 = useRef<HTMLDivElement | null>(null);
 
-  const handleScroll = () => {
-    if (targetElementRef.current) {
-      const elementRect = targetElementRef.current.getBoundingClientRect();
+  //Accept reference of each component
+  //to check if they are visible so state can change
+  //which then triggers animation by adding the CSS class
+  const handleScroll = (target: React.RefObject<HTMLElement>) => {
+    if (target.current) {
+      const elementRect = target.current.getBoundingClientRect();
       const elementTop = elementRect.top;
       const windowHeight = window.innerHeight;
       if (elementTop < windowHeight) {
@@ -35,18 +39,28 @@ const MyProjects: React.FC = () => {
     }
   };
 
+  // const firstComponent = handleScroll(targetElementRef);
+
   useEffect(() => {
-    window.addEventListener("touchmove", handleScroll);
-    return () => window.removeEventListener("touchmove", handleScroll);
+    window.addEventListener("touchmove", () => {
+      handleScroll(targetElementRef);
+      handleScroll(targetElementRef1);
+    });
+
+    return () =>
+      window.removeEventListener("touchmove", () => {
+        handleScroll(targetElementRef);
+        handleScroll(targetElementRef1);
+      });
   }, []);
 
   return (
-    <div className="projects">
+    <div
+      ref={targetElementRef}
+      className={`projects ${isVisible ? "swirl-in-fwd" : ""}`}
+    >
       <h1>My Projects</h1>
-      <section
-        ref={targetElementRef}
-        className={`single-project ${isVisible ? "slider" : ""}`}
-      >
+      <section className="single-project">
         <div>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
@@ -61,7 +75,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${waldo1} 200w,
              ${waldo2} 471w,
@@ -74,7 +88,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
         ${waldo5} 200w,
         ${waldo6} 369w,
@@ -114,7 +128,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
         ${cart} 200w,
         ${cart1} 615w,
@@ -126,7 +140,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
           ${cart3} 200w,
           ${cart4} 699w,
@@ -157,7 +171,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
             ${card} 200w,
             ${card1} 550w,
@@ -169,7 +183,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
              ${card3} 200w,
             ${card4} 485w,
@@ -201,7 +215,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
             ${cv} 200w,
             ${cv1} 764w,
@@ -213,13 +227,13 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${cv3} 200w,
               ${cv4} 800w"
               `}
               src={cv3}
-              alt=""
+              alt="Resume of a Devops engineer"
             />
           </div>
 
@@ -243,7 +257,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
             ${weather} 200w,
             ${weather1} 653w,
@@ -255,7 +269,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${weather3} 200w,
               ${weather4} 733w,
@@ -286,7 +300,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${tic} 200w,
               ${tic1} 800w
@@ -297,7 +311,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 600px) 80vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${tic2} 200w,
               ${tic3} 800w

@@ -1,8 +1,31 @@
+import { useState, useEffect, useRef } from "react";
+
 const Skills = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const targetElementRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScroll = () => {
+    if (targetElementRef.current) {
+      const elementRect = targetElementRef.current.getBoundingClientRect();
+      const elementTop = elementRect.top;
+      const windowHeight = window.innerHeight;
+      if (elementTop < windowHeight) {
+        setIsVisible(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("touchmove", handleScroll);
+    return () => window.removeEventListener("touchmove", handleScroll);
+  }, []);
   return (
     <section className="skills">
       <h2>Skills</h2>
-      <div className="skill-grp">
+      <div
+        ref={targetElementRef}
+        className={`skill-grp ${isVisible ? "slide-in-left" : ""}`}
+      >
         <div className="each-skill">
           <img
             className="devicons"
