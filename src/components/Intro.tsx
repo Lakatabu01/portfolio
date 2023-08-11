@@ -1,6 +1,6 @@
 import React from "react";
 
-const Intro = () => {
+const Intro: React.FC = () => {
   return (
     <section className="intro">
       <div>

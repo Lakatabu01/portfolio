@@ -18,7 +18,7 @@ const Footer = () => {
         <img
           className="dancer"
           src="https://media.tenor.com/aWxn9I76-oQAAAAj/shumsirhk-shum.gif"
-          alt=""
+          alt="Dancing man"
         />
       </div>
 

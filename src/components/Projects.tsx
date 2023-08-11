@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useState, useEffect } from "react";
 import {
   waldo1,
   waldo2,
@@ -20,10 +21,32 @@ import { weather3, weather4, weather5 } from "./PhotoImports";
 import { tic, tic1, tic2, tic3 } from "./PhotoImports";
 
 const MyProjects: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const targetElementRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScroll = () => {
+    if (targetElementRef.current) {
+      const elementRect = targetElementRef.current.getBoundingClientRect();
+      const elementTop = elementRect.top;
+      const windowHeight = window.innerHeight;
+      if (elementTop < windowHeight) {
+        setIsVisible(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("touchmove", handleScroll);
+    return () => window.removeEventListener("touchmove", handleScroll);
+  }, []);
+
   return (
     <div className="projects">
       <h1>My Projects</h1>
-      <section className="single-project">
+      <section
+        ref={targetElementRef}
+        className={`single-project ${isVisible ? "slider" : ""}`}
+      >
         <div>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
