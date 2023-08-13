@@ -847,6 +847,10 @@ button:hover {
     justify-content: space-between;
   }
 
+  h2 {
+    font-size: 1.7em;
+  }
+
   .menu-nav {
     display: block;
   }
@@ -862,7 +866,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.1em;
+    gap: 0.5em;
+    border: 1px solid green;
   }
 
   .img-grp {
@@ -888,6 +894,7 @@ button:hover {
 
   .profile {
     padding: 2rem 2em 2em 2em;
+    gap: 1em;
   }
 
   .blog-flex {
@@ -917,5 +924,20 @@ button:hover {
 
   .list-nav {
     display: none;
+  }
+
+  .top-buttons {
+    margin: 0 1em 0 1em;
+  }
+
+  .socials {
+    margin-top: -1em;
+  }
+  .projects {
+    padding: 0 2em 0 2em;
+  }
+
+  .collaborate {
+    font-size: 2.3em;
   }
 }
