@@ -16,8 +16,8 @@ const Skills = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("touchmove", handleScroll);
-    return () => window.removeEventListener("touchmove", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <section className="skills">

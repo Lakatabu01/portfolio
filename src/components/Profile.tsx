@@ -22,14 +22,14 @@ const Profile: React.FC = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("touchmove", handleScroll);
-    return () => window.removeEventListener("touchmove", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <section
       ref={targetElementRef}
-      className={` profile ${isVisible ? "slider" : ""}`}
+      className={`profile ${isVisible ? "slider" : ""}`}
     >
       <div>
         <p className="profile-text">

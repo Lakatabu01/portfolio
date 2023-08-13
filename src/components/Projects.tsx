@@ -23,7 +23,6 @@ import { tic, tic1, tic2, tic3 } from "./PhotoImports";
 const MyProjects: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const targetElementRef = useRef<HTMLDivElement | null>(null);
-  const targetElementRef1 = useRef<HTMLDivElement | null>(null);
 
   //Accept reference of each component
   //to check if they are visible so state can change
@@ -42,15 +41,13 @@ const MyProjects: React.FC = () => {
   // const firstComponent = handleScroll(targetElementRef);
 
   useEffect(() => {
-    window.addEventListener("touchmove", () => {
+    window.addEventListener("scroll", () => {
       handleScroll(targetElementRef);
-      handleScroll(targetElementRef1);
     });
 
     return () =>
-      window.removeEventListener("touchmove", () => {
+      window.removeEventListener("scroll", () => {
         handleScroll(targetElementRef);
-        handleScroll(targetElementRef1);
       });
   }, []);
 
