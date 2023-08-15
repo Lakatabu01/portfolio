@@ -290,18 +290,18 @@
 
 #root {
   overflow-x: hidden;
+  width: 100%;
 }
 
 body {
-  font-family: "roboto", sans-serif;
   color: white;
   background-color: black;
   padding: 0;
   margin: 0%;
   box-sizing: border-box;
   height: 100vh;
-
-  width: 100vw;
+  width: 100%;
+  font-family: "roboto", sans-serif;
 }
 
 .menu-btn {
@@ -310,6 +310,7 @@ body {
 }
 
 .menu-nav {
+  font-family: "roboto", sans-serif;
   display: none;
   padding: 0.4em;
 }
@@ -452,6 +453,7 @@ h1 {
 }
 
 .single-project {
+  color: rgb(170, 170, 170);
   display: flex;
   align-items: flex-start;
   gap: 2em;
@@ -841,14 +843,25 @@ button:hover {
 
 @media (max-width: 768px) {
   header {
-    width: 100%;
-    padding: 0 0 0 0.5em;
+    width: 98%;
     display: flex;
     justify-content: space-between;
+    padding: 0%;
+    height: 5em;
+  }
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 1em;
   }
 
   h2 {
     font-size: 1.7em;
+  }
+
+  .star {
+    margin-left: 1em;
   }
 
   .menu-nav {
@@ -868,7 +881,6 @@ button:hover {
     align-items: center;
     margin-bottom: 1.1em;
     gap: 0.5em;
-    border: 1px solid green;
   }
 
   .img-grp {
@@ -889,7 +901,7 @@ button:hover {
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .profile {
@@ -934,10 +946,28 @@ button:hover {
     margin-top: -1em;
   }
   .projects {
-    padding: 0 2em 0 2em;
+    padding: 0 1em 0 1em;
   }
 
   .collaborate {
     font-size: 2.3em;
+  }
+
+  .socials > div {
+    padding-right: 1em;
+  }
+}
+
+@media (max-width: 900px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .devicons {
+    max-height: 2em;
+    max-width: 2em;
   }
 }

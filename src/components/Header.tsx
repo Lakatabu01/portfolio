@@ -7,7 +7,7 @@ import { mdiMenu } from "@mdi/js";
 const Header: React.FC = () => {
   return (
     <header>
-      <div>
+      <div className="star">
         <Icon path={mdiStar} size={1} />
       </div>
 

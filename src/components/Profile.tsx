@@ -64,7 +64,7 @@ const Profile: React.FC = () => {
       <div className="image-container">
         <img
           className="image"
-          sizes=" (max-width: 768px) 80vw, (max-width: 1400px) 40vw, 400px"
+          sizes=" (max-width: 768px) 80vw, (max-width: 900px) 80vw, (max-width: 1400px) 40vw, 400px"
           srcSet={`
             ${image1} 200w,
             ${image2} 487w,
