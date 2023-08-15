@@ -333,13 +333,11 @@ li {
   padding-right: 2em;
 }
 
-header {
+.header {
   display: flex;
   align-items: center;
   padding: 0 0 0 4em;
   width: 100vw;
-  background-color: black;
-  position: sticky;
   top: 0;
   left: 0;
 }
@@ -512,7 +510,7 @@ h1 {
 }
 
 .skills {
-  padding: 1em;
+  padding: 2em;
 }
 
 .skill-grp {
@@ -628,6 +626,10 @@ footer {
 
 .coffee-txt {
   color: rgb(170, 170, 170);
+}
+
+.drop-down {
+  display: none;
 }
 
 .slider {
@@ -843,11 +845,63 @@ button:hover {
 
 @media (max-width: 768px) {
   header {
+    background-color: black;
+  }
+
+  .header {
     width: 98%;
     display: flex;
     justify-content: space-between;
     padding: 0%;
-    height: 5em;
+  }
+
+  .drop-down {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+
+  .show {
+    animation: expand 500ms ease-in-out;
+    transform-origin: top;
+  }
+
+  @keyframes expand {
+    0% {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+
+    70% {
+      transform: scaleY(1.1);
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  .drop-down > ul {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    z-index: 77;
+  }
+
+  .drop-list {
+    padding-bottom: 0.9em;
+    margin: auto auto;
+  }
+
+  .drop-list > button {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding: 0.5em;
+    border: 2px;
   }
 
   body {
@@ -894,6 +948,10 @@ button:hover {
 
   .skill-grp {
     gap: 0;
+  }
+
+  .skills {
+    padding: 1em;
   }
 
   .each-skill {
