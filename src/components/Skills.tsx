@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
+import React from "react";
 
-const Skills = () => {
+const Skills: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const targetElementRef = useRef<HTMLDivElement | null>(null);
 

@@ -296,12 +296,25 @@
 body {
   color: white;
   background-color: black;
-  padding: 0;
+  padding: 4em 0 0 0;
   margin: 0%;
   box-sizing: border-box;
   height: 100vh;
   width: 100%;
   font-family: "roboto", sans-serif;
+}
+
+h3 {
+  color: white;
+}
+
+header {
+  position: fixed; /* Fix the header to the top */
+  top: 0; /* Align it at the top */
+  left: 0;
+  width: 100%; /* Make it span the full width */
+  z-index: 1000;
+  background-color: black;
 }
 
 .menu-btn {
@@ -332,21 +345,24 @@ ul {
 li {
   padding-right: 2em;
 }
+/*
+button {
+  cursor: pointer;
+}
+*/
 
 .header {
   display: flex;
   align-items: center;
   padding: 0 0 0 4em;
   width: 100vw;
-  top: 0;
-  left: 0;
 }
 
 .nav-button {
   background-color: black;
   color: white;
   border-color: black;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .nav-button:hover {
@@ -356,11 +372,18 @@ li {
 
 .socials {
   display: flex;
-  margin-top: -2em;
+  margin-top: -1em;
+  margin-left: 2em;
+  align-items: center;
 }
 
 .socials > div {
-  padding-right: 2em;
+  padding-right: 3em;
+}
+
+.social-image {
+  height: 2em;
+  width: 2em;
 }
 
 h1 {
@@ -843,9 +866,20 @@ button:hover {
   }
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
 @media (max-width: 768px) {
   header {
     background-color: black;
+    min-height: 3em;
+  }
+
+  button {
+    cursor: pointer;
   }
 
   .header {
@@ -1001,7 +1035,8 @@ button:hover {
   }
 
   .socials {
-    margin-top: -1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
   }
   .projects {
     padding: 0 1em 0 1em;

@@ -11,7 +11,7 @@ const BlogPosts: React.FC = () => {
         <div className="each-blog">
           <img
             className="project-image pic"
-            sizes="(max-width: 600px) 80vw, (max-width: 1400px) 30vw, 800px"
+            sizes="(max-width: 600px) 90vw, (max-width: 1400px) 30vw, 800px"
             srcSet={`
 ${Posts3} 200w,
 ${Posts4} 456w,
@@ -35,7 +35,7 @@ ${Posts5} 640w
         <div className="each-blog">
           <img
             className="project-image pic"
-            sizes="(max-width: 600px) 80vw, (max-width: 1400px) 30vw, 800px"
+            sizes="(max-width: 600px) 90vw, (max-width: 1400px) 30vw, 800px"
             srcSet={`
             ${posts6} 200w,
             ${posts7} 501w,

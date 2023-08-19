@@ -5,17 +5,9 @@ const Intro: React.FC = () => {
     <section className="intro">
       <div>
         <h1 className="default-line-spacing">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-          maiores!
+          I'm Bamgbade Olanrewaju — Frontend Software engineer, writer & problem
+          solver.
         </h1>
-
-        <div className="socials">
-          <div>logo</div>
-          <div>logo</div>
-          <div>logo</div>
-          <div>logo</div>
-          <div>logo</div>
-        </div>
       </div>
     </section>
   );

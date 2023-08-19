@@ -33,12 +33,10 @@ const Profile: React.FC = () => {
     >
       <div>
         <p className="profile-text">
-          Hello there, I'm Bamgbade Olanrewaju a{" "}
-          <span className="white">frontend web developer</span>, i love to build
-          beautiful user friendly interfaces that follow Web Content
-          Accessibility guidelines. Beyond coding, I have a flair for{" "}
-          <span className="white">technical writing</span>, where I enjoy
-          crafting clear and informative documentation to simplify complex
+          Hello there, i love to build beautiful user friendly interfaces that
+          follow Web Content Accessibility guidelines. Beyond coding, I have a
+          flair for <span className="white">technical writing</span>, where I
+          enjoy crafting clear and informative documentation to simplify complex
           concepts for diverse audiences.
         </p>
 

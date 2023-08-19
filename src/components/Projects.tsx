@@ -59,12 +59,15 @@ const MyProjects: React.FC = () => {
       <h1>My Projects</h1>
       <section className="single-project">
         <div>
+          <h3>Where is Waldo app</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-            aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
-            voluptates corrupti tempora aut totam itaque a quasi deserunt
-            eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Magni, exercitationem?
+            This project is a "Where is Waldo" game that allows users to find
+            Waldo and his friends in a busy scene. The app is built using React,
+            TypeScript, Firebase, Redux toolkit and styled-components Users can
+            search for Waldo and his friends in a busy scene. Users can track
+            their progress and see the characters they have found. Users can
+            submit their score to a leaderboard and compete with other players.
+            This project was unit tested with Jest
           </p>
         </div>
 
@@ -72,7 +75,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${waldo1} 200w,
              ${waldo2} 471w,
@@ -85,7 +88,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
         ${waldo5} 200w,
         ${waldo6} 369w,
@@ -101,43 +104,57 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">View code</button>
+            <button className="code-btn">
+              {" "}
+              <a href="https://github.com/Lakatabu01/where-is-waldo.git">
+                View code
+              </a>
+            </button>
             <p
               className="preview
             "
             >
-              Preview &#8594;
+              <a href="https://lakatabu01.github.io/where-is-waldo/">
+                {" "}
+                Preview &#8594;
+              </a>
             </p>
           </div>
         </div>
       </section>
 
       <section className="single-project">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
-          voluptates corrupti tempora aut totam itaque a quasi deserunt
-          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Magni, exercitationem?
-        </p>
+        <div>
+          <h3>Shopping cart</h3>
+          <p>
+            I built a shopping cart application using React and
+            react-router-dom. The application has a user-friendly interface that
+            allows users to browse through products with ease and add items to
+            their cart. The application uses three routes The application was
+            built using the following technologies: React, react-router-dom,
+            Material UI and Shopping cart API. This project because demonstrates
+            my ability to use React and react-router-dom to build a functional
+            and user-friendly application.
+          </p>
+        </div>
 
         <div>
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
         ${cart} 200w,
         ${cart1} 615w,
         ${cart2} 800w
         `}
               src={cart2}
-              alt=""
+              alt="Screenshot of different products"
             />
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
           ${cart3} 200w,
           ${cart4} 699w,
@@ -149,26 +166,42 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">View code</button>
-            <p className="preview">Preview &#8594; </p>
+            <button className="code-btn">
+              {" "}
+              <a href="https://github.com/Lakatabu01/shopping-cart">
+                {" "}
+                View code
+              </a>
+            </button>
+            <p className="preview">
+              <a href="https://lakatabu01.github.io/cv-application/">
+                Preview &#8594;
+              </a>{" "}
+            </p>
           </div>
         </div>
       </section>
 
       <section className="single-project">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
-          voluptates corrupti tempora aut totam itaque a quasi deserunt
-          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Magni, exercitationem?
-        </p>
+        <div>
+          <h3>Memory card game</h3>
+          <p>
+            I took on the challenge of building a captivating Memory Card game
+            using React, showcasing not only my technical skills but also my
+            creative approach to interactive web applications. In this game,
+            users accumulate points by clicking on various images, but there's a
+            catch, every image can only be clicked once throughout the game.
+            This distinctive feature adds an element of strategy and memory
+            exercise, making the game not only entertaining but also mentally
+            stimulating
+          </p>
+        </div>
 
         <div>
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
             ${card} 200w,
             ${card1} 550w,
@@ -180,7 +213,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
              ${card3} 200w,
             ${card4} 485w,
@@ -193,26 +226,37 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">View code</button>
-            <p className="preview">Preview &#8594; </p>
+            <button className="code-btn">
+              <a href="https://github.com/Lakatabu01/memory-card">View code</a>
+            </button>
+            <p className="preview">
+              {" "}
+              <a href="https://lakatabu01.github.io/memory-card/">
+                Preview &#8594;
+              </a>{" "}
+            </p>
           </div>
         </div>
       </section>
 
       <section className="single-project">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
-          voluptates corrupti tempora aut totam itaque a quasi deserunt
-          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Magni, exercitationem?
-        </p>
+        <div>
+          <h3>Resume builder</h3>
+          <p>
+            I built a React app that allows users to create and modify their own
+            resumes using a ready template. The app is built with JavaScript and
+            React CSS, and it is hosted on GitHub Pages. The app is a valuable
+            addition to my portfolio because it demonstrates my skills in React
+            development, JavaScript, and CSS. It also shows that I am able to
+            build user-friendly and functional applications.
+          </p>
+        </div>
 
         <div>
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
             ${cv} 200w,
             ${cv1} 764w,
@@ -224,7 +268,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${cv3} 200w,
               ${cv4} 800w"
@@ -235,26 +279,41 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">View code</button>
-            <p className="preview">Preview &#8594; </p>
+            <button className="code-btn">
+              <a href="https://github.com/Lakatabu01/cv-application">
+                View code
+              </a>
+            </button>
+            <p className="preview">
+              {" "}
+              <a href="https://lakatabu01.github.io/cv-application/">
+                Preview &#8594;
+              </a>{" "}
+            </p>
           </div>
         </div>
       </section>
 
       <section className="single-project">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
-          voluptates corrupti tempora aut totam itaque a quasi deserunt
-          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Magni, exercitationem?
-        </p>
+        <div>
+          <h3>Weather forecast app</h3>
+          <p>
+            This is an application designed to provide real-time weather
+            conditions for any city across the globe. Constructed using a
+            combination of HTML, CSS, and vanilla JavaScript, this project
+            showcases my ability to create functional web applications from the
+            ground up. To optimize the development process, the project was
+            bundled using Webpack and transpiled with Babel. This ensures that
+            the application runs smoothly across various browsers enhancing its
+            accessibility and usability.
+          </p>
+        </div>
 
         <div>
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
             ${weather} 200w,
             ${weather1} 653w,
@@ -266,7 +325,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${weather3} 200w,
               ${weather4} 733w,
@@ -278,26 +337,38 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">View code</button>
-            <p className="preview">Preview &#8594; </p>
+            <button className="code-btn">
+              <a href="https://github.com/Lakatabu01/weather-app">View code</a>
+            </button>
+            <p className="preview">
+              {" "}
+              <a href="https://lakatabu01.github.io/weather-app/">
+                Preview &#8594;
+              </a>{" "}
+            </p>
           </div>
         </div>
       </section>
 
       <section className="single-project">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam
-          aspernatur, reprehenderit dolore, veritatis facilis fuga sapiente
-          voluptates corrupti tempora aut totam itaque a quasi deserunt
-          eligendi! Sunt accusantium suscipit at. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Magni, exercitationem?
-        </p>
+        <div>
+          <h3>Tic-tac-toe</h3>
+          <p>
+            I developed a Tic Tac Toe game playable between two players or
+            against an AI opponent, utilizing HTML, CSS, and JavaScript. Players
+            take turns placing their X or O symbol, aiming to achieve three in a
+            row for victory. The game has a user-friendly interface, an AI
+            opponent, different gaming modes, and the ability to reload
+            progress. Its foundation in HTML, CSS, and JavaScript showcases my
+            skills and ability to craft interactive applications.
+          </p>
+        </div>
 
         <div>
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${tic} 200w,
               ${tic1} 800w
@@ -308,7 +379,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 70vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
               srcSet={`
               ${tic2} 200w,
               ${tic3} 800w
@@ -319,8 +390,15 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">View code</button>
-            <p className="preview">Preview &#8594; </p>
+            <button className="code-btn">
+              <a href="https://github.com/Lakatabu01/tic-tac-toe">View code</a>
+            </button>
+            <p className="preview">
+              {" "}
+              <a href="https://lakatabu01.github.io/tic-tac-toe/">
+                Preview &#8594;
+              </a>{" "}
+            </p>
           </div>
         </div>
       </section>
