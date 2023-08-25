@@ -22,12 +22,13 @@ ${Posts5} 640w
           />
 
           <div className="blog-details">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-              quibusdam.
-            </p>
+            <p>Commit your code early!</p>
             <div>
-              <p className="preview">Preview &#8594; </p>
+              <p className="preview">
+                <a href="https://geekspeak.hashnode.dev/commit-your-code-early">
+                  Preview &#8594;
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -46,12 +47,13 @@ ${Posts5} 640w
           />
 
           <div className="blog-details">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-              quibusdam.
-            </p>
+            <p>Understanding React components and how it works</p>
             <div>
-              <p className="preview">Preview &#8594; </p>
+              <p className="preview">
+                <a href="https://geekspeak.hashnode.dev/understanding-react-components-and-how-it-works">
+                  Preview &#8594;
+                </a>{" "}
+              </p>
             </div>
           </div>
         </div>

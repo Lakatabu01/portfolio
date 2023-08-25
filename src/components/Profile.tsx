@@ -33,30 +33,30 @@ const Profile: React.FC = () => {
     >
       <div>
         <p className="profile-text">
-          Hello there, i love to build beautiful user friendly interfaces that
-          follow Web Content Accessibility guidelines. Beyond coding, I have a
-          flair for <span className="white">technical writing</span>, where I
-          enjoy crafting clear and informative documentation to simplify complex
+          Hello there, i love to build beautiful user friendly{" "}
+          <span className="white">interfaces</span> that follow Web Content
+          Accessibility guidelines. Beyond coding, I have a flair for{" "}
+          <span className="white">technical writing</span>, where I enjoy
+          crafting clear and informative documentation to simplify complex
           concepts for diverse audiences.
+        </p>
+
+        <p className="profile-text">
+          Whether I'm on my own or part of a team, my goal is simple, deliver{" "}
+          <span className="white">quality</span> that matches{" "}
+          <span className="white">user</span> needs. I'm always eager to tackle
+          what I don't know, <span className="white">learning</span> new things
+          along the way.
         </p>
 
         <p className="profile-text">
           {" "}
           When I'm not coding or writing, you'll find me indulging in my two
-          other passions: listening to <span className="white">music</span> that
-          fuels my inspiration, and hitting the{" "}
+          other passions, listening to <span className="white">music</span> that
+          fuels my inspiration and hitting the{" "}
           <span className="white">gym</span> regularly to stay active and
           focused. So excited to share my portfolio with you. Alright ...thats
           enough introduction why don't you have a look around
-        </p>
-
-        <p className="profile-text">
-          Hello there, I'm Bamgbade Olanrewaju a{" "}
-          <span className="white">frontend web developer</span>, i love to build
-          beautiful user friendly interfaces that follow Web Content
-          Accessibility guidelines. Beyond coding, I have a flair for technical
-          writing, where I enjoy crafting clear and informative documentation to
-          simplify complex concepts for diverse audiences.
         </p>
       </div>
       <div className="image-container">
