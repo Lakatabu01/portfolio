@@ -19,7 +19,7 @@ const Footer = () => {
             If you find the content on my porfolio, blog, or elsewhere helpful
             and want to show extra support, you can buy me a coffee{" "}
           </span>{" "}
-          <a href="buymeacoffee.com/bamgbadeol8">here ☕</a>
+          <a href="https://www.buymeacoffee.com/bamgbadeol8">here ☕</a>
         </p>
 
         <img
