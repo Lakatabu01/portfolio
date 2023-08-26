@@ -15,7 +15,9 @@ import BlogPosts from "./components/BlogPosts";
 import Footer from "./components/Footer";
 import Social from "./components/Social";
 
+//Type declaration for componentRefs function
 interface ComponentRefs {
+  //You can use any string as a key to access the value.
   [key: string]: React.RefObject<HTMLDivElement>;
 }
 
@@ -27,7 +29,7 @@ const App: React.FC = () => {
     setDropDown(!dropDown);
   };
 
-  //cancel header drop down if any part of the widow is clicked
+  //Close header drop down if any part of the widow is clicked
   //except header
   const handleOutsideClick = (event: MouseEvent) => {
     if (
@@ -42,6 +44,7 @@ const App: React.FC = () => {
     window.addEventListener("click", handleOutsideClick);
   });
 
+  //  Initial declaration of the references
   const componentRefs: ComponentRefs = {
     component1: useRef<HTMLDivElement>(null),
     component2: useRef<HTMLDivElement>(null),
@@ -53,10 +56,10 @@ const App: React.FC = () => {
   const scrollToComponent = (componentName: string) => {
     const componentRef = componentRefs[componentName];
     if (componentRef.current) {
-      // component 2 is tiny so this conditional checks and adjusts the scroll
       componentRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <div data-testid="entire-elements">
       <header className={`${dropDown ? "show" : ""}`}>
@@ -193,6 +196,7 @@ const App: React.FC = () => {
           </ul>
         </div>
       </header>
+
       <main>
         <div ref={componentRefs.component2}>
           <Intro />
@@ -217,6 +221,7 @@ const App: React.FC = () => {
           <BlogPosts />
         </div>
       </main>
+
       <Footer />
     </div>
   );

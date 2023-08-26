@@ -10,6 +10,8 @@ const Profile: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const targetElementRef = useRef<HTMLDivElement | null>(null);
 
+  //Function that checks if element is visible to change state
+  //which inturn triggers style for transitioning
   const handleScroll = () => {
     if (targetElementRef.current) {
       const elementRect = targetElementRef.current.getBoundingClientRect();
