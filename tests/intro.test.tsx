@@ -10,4 +10,11 @@ describe("Intro", () => {
     const content = getByTestId(document.body, "content");
     expect(content).toBeDefined();
   });
+
+  it("renders intro", () => {
+    render(<Intro />);
+
+    const content = getByTestId(document.body, "content");
+    expect(content).toContain(HTMLElement);
+  });
 });

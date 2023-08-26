@@ -58,7 +58,7 @@ const App: React.FC = () => {
     }
   };
   return (
-    <div>
+    <div data-testid="entire-elements">
       <header className={`${dropDown ? "show" : ""}`}>
         <div className="header">
           <div className="star">
