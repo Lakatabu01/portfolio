@@ -2,6 +2,8 @@
 
 Welcome to my portfolio project built using Vite, TypeScript, and React. This project showcases my skills, projects, and achievements in a clean and organized manner. It has been thoroughly tested using Vitest to ensure its functionality and reliability.
 
+Link: https://portfolio-lakatabu01.vercel.app
+
 Table of Contents
 Introduction
 Features
