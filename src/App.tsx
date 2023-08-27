@@ -131,7 +131,11 @@ const App: React.FC = () => {
           </nav>
 
           <nav className="menu-nav">
-            <button onClick={handleDropDown} className="menu-btn">
+            <button
+              aria-label="menu-button"
+              onClick={handleDropDown}
+              className="menu-btn"
+            >
               <Icon
                 path={!dropDown ? mdiMenu : mdiClose}
                 size={1}
@@ -177,7 +181,7 @@ const App: React.FC = () => {
               <button
                 onClick={() => {
                   setDropDown(false);
-                  scrollToComponent("component1");
+                  scrollToComponent("component4");
                 }}
               >
                 Projects

@@ -3,14 +3,13 @@ const Footer = () => {
     <footer>
       <section className="glitch-div">
         <h3 className="collaborate"> Let's collaborate </h3>
-        <button className="email-btn">
-          <a
-            href="mailto:bamgbadeolanrewaju@gmail.com"
-            aria-label="link to send me an email"
-          >
-            Bamgbadeolanrewaju@gmail.com
-          </a>
-        </button>
+
+        <a
+          href="mailto:bamgbadeolanrewaju@gmail.com"
+          aria-label="link to send me an email"
+        >
+          <button className="email-btn"> Bamgbadeolanrewaju@gmail.com</button>
+        </a>
       </section>
 
       <div className="buy-coffee">

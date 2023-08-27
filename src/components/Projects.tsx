@@ -104,12 +104,10 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">
-              {" "}
-              <a href="https://github.com/Lakatabu01/where-is-waldo.git">
-                View code
-              </a>
-            </button>
+            <a href="https://github.com/Lakatabu01/where-is-waldo.git">
+              <button className="code-btn"> View code</button>
+            </a>
+
             <p
               className="preview
             "
@@ -166,13 +164,11 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">
+            <a href="https://github.com/Lakatabu01/shopping-cart">
               {" "}
-              <a href="https://github.com/Lakatabu01/shopping-cart">
-                {" "}
-                View code
-              </a>
-            </button>
+              <button className="code-btn"> View code</button>
+            </a>
+
             <p className="preview">
               <a href="https://lakatabu01.github.io/cv-application/">
                 Preview &#8594;
@@ -226,9 +222,10 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">
-              <a href="https://github.com/Lakatabu01/memory-card">View code</a>
-            </button>
+            <a href="https://github.com/Lakatabu01/memory-card">
+              <button className="code-btn">View code</button>
+            </a>
+
             <p className="preview">
               {" "}
               <a href="https://lakatabu01.github.io/memory-card/">
@@ -279,11 +276,10 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">
-              <a href="https://github.com/Lakatabu01/cv-application">
-                View code
-              </a>
-            </button>
+            <a href="https://github.com/Lakatabu01/cv-application">
+              <button className="code-btn"> View code</button>
+            </a>
+
             <p className="preview">
               {" "}
               <a href="https://lakatabu01.github.io/cv-application/">
@@ -337,9 +333,10 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">
-              <a href="https://github.com/Lakatabu01/weather-app">View code</a>
-            </button>
+            <a href="https://github.com/Lakatabu01/weather-app">
+              <button className="code-btn">View code</button>
+            </a>
+
             <p className="preview">
               {" "}
               <a href="https://lakatabu01.github.io/weather-app/">
@@ -390,9 +387,10 @@ const MyProjects: React.FC = () => {
           </div>
 
           <div className="project-links">
-            <button className="code-btn">
-              <a href="https://github.com/Lakatabu01/tic-tac-toe">View code</a>
-            </button>
+            <a href="https://github.com/Lakatabu01/tic-tac-toe">
+              <button className="code-btn">View code</button>
+            </a>
+
             <p className="preview">
               {" "}
               <a href="https://lakatabu01.github.io/tic-tac-toe/">
