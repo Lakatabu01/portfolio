@@ -361,7 +361,7 @@ button {
 .nav-button {
   background-color: black;
   color: white;
-  border-color: black;
+  border: 1px solid transparent;
   font-size: 1em;
 }
 
