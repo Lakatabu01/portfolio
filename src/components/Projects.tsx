@@ -109,10 +109,10 @@ const MyProjects: React.FC = () => {
             </a>
 
             <p
-              className="preview
-            "
+              
             >
-              <a href="https://lakatabu01.github.io/where-is-waldo/">
+              <a href="https://lakatabu01.github.io/where-is-waldo/" className="preview
+            ">
                 {" "}
                 Preview &#8594;
               </a>
@@ -169,8 +169,10 @@ const MyProjects: React.FC = () => {
               <button className="code-btn"> View code</button>
             </a>
 
-            <p className="preview">
-              <a href="https://lakatabu01.github.io/cv-application/">
+            <p>
+              <a href="https://lakatabu01.github.io/cv-application/" 
+              className="preview
+            ">
                 Preview &#8594;
               </a>{" "}
             </p>
@@ -226,9 +228,11 @@ const MyProjects: React.FC = () => {
               <button className="code-btn">View code</button>
             </a>
 
-            <p className="preview">
+            <p>
               {" "}
-              <a href="https://lakatabu01.github.io/memory-card/">
+              <a href="https://lakatabu01.github.io/memory-card/" 
+              className="preview
+            ">
                 Preview &#8594;
               </a>{" "}
             </p>
@@ -280,9 +284,11 @@ const MyProjects: React.FC = () => {
               <button className="code-btn"> View code</button>
             </a>
 
-            <p className="preview">
+            <p>
               {" "}
-              <a href="https://lakatabu01.github.io/cv-application/">
+              <a href="https://lakatabu01.github.io/cv-application/" 
+              className="preview
+            ">
                 Preview &#8594;
               </a>{" "}
             </p>
@@ -337,9 +343,11 @@ const MyProjects: React.FC = () => {
               <button className="code-btn">View code</button>
             </a>
 
-            <p className="preview">
+            <p>
               {" "}
-              <a href="https://lakatabu01.github.io/weather-app/">
+              <a href="https://lakatabu01.github.io/weather-app/"
+              className="preview
+              ">
                 Preview &#8594;
               </a>{" "}
             </p>
@@ -391,9 +399,12 @@ const MyProjects: React.FC = () => {
               <button className="code-btn">View code</button>
             </a>
 
-            <p className="preview">
+            <p>
               {" "}
-              <a href="https://lakatabu01.github.io/tic-tac-toe/">
+              <a href="https://lakatabu01.github.io/tic-tac-toe/"
+              className="preview
+              "
+              >
                 Preview &#8594;
               </a>{" "}
             </p>

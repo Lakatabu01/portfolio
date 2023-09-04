@@ -495,7 +495,7 @@ h1 {
 
 .project-links {
   display: flex;
-  align-items: start;
+  align-items: center;
   width: 100%;
   justify-content: flex-start;
   padding: 0.5 2em 0 0;
@@ -508,8 +508,8 @@ h1 {
 }
 
 .preview:hover {
-  color: #e600e6;
   cursor: pointer;
+  color: #e600e6;
 }
 
 .code-btn {

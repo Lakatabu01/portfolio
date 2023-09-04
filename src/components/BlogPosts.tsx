@@ -24,8 +24,11 @@ ${Posts5} 640w
           <div className="blog-details">
             <p>Commit your code early!</p>
             <div>
-              <p className="preview">
-                <a href="https://geekspeak.hashnode.dev/commit-your-code-early">
+              <p>
+                <a href="https://geekspeak.hashnode.dev/commit-your-code-early"
+                className="preview
+                "
+                >
                   Preview &#8594;
                 </a>
               </p>
@@ -49,8 +52,11 @@ ${Posts5} 640w
           <div className="blog-details">
             <p>Understanding React components and how it works</p>
             <div>
-              <p className="preview">
-                <a href="https://geekspeak.hashnode.dev/understanding-react-components-and-how-it-works">
+              <p>
+                <a href="https://geekspeak.hashnode.dev/understanding-react-components-and-how-it-works"
+                className="preview
+                "
+                >
                   Preview &#8594;
                 </a>{" "}
               </p>
