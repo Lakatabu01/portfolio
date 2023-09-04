@@ -317,6 +317,10 @@ header {
   background-color: black;
 }
 
+button{
+  border: 1px solid transparent;
+}
+
 .menu-btn {
   background-color: black;
   border: 2px solid black;
@@ -412,11 +416,13 @@ h1 {
 .image {
   border-radius: 10%;
 }
+
+
 /* CSS */
 .resume-button,
 .hire-me-button {
   border-radius: 100px;
-  padding: 0.5em;
+  padding: 1em;
   color: #ffffff;
   cursor: pointer;
   font-family: CircularStd, sans-serif;
@@ -463,7 +469,6 @@ h1 {
 .top-buttons {
   margin: 2em;
   display: flex;
-  flex-direction: column;
   width: 30%;
 }
 
