@@ -75,7 +75,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
               ${waldo1} 200w,
              ${waldo2} 471w,
@@ -88,7 +88,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
         ${waldo5} 200w,
         ${waldo6} 369w,
@@ -108,15 +108,15 @@ const MyProjects: React.FC = () => {
               <button className="code-btn"> View code</button>
             </a>
 
-            <p
-              
-            >
-              <a href="https://lakatabu01.github.io/where-is-waldo/" className="preview
+            <p>
+              <a href="https://lakatabu01.github.io/where-is-waldo/" 
+              className="preview
             ">
                 {" "}
                 Preview &#8594;
               </a>
             </p>
+            
           </div>
         </div>
       </section>
@@ -140,7 +140,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
         ${cart} 200w,
         ${cart1} 615w,
@@ -152,7 +152,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
           ${cart3} 200w,
           ${cart4} 699w,
@@ -199,7 +199,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
             ${card} 200w,
             ${card1} 550w,
@@ -211,7 +211,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
              ${card3} 200w,
             ${card4} 485w,
@@ -257,7 +257,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
             ${cv} 200w,
             ${cv1} 764w,
@@ -269,7 +269,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
               ${cv3} 200w,
               ${cv4} 800w"
@@ -315,7 +315,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
             ${weather} 200w,
             ${weather1} 653w,
@@ -327,7 +327,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
               ${weather3} 200w,
               ${weather4} 733w,
@@ -373,7 +373,7 @@ const MyProjects: React.FC = () => {
           <div className="img-grp">
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
               ${tic} 200w,
               ${tic1} 800w
@@ -384,7 +384,7 @@ const MyProjects: React.FC = () => {
 
             <img
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 800px"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
               srcSet={`
               ${tic2} 200w,
               ${tic3} 800w
