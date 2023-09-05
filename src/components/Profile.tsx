@@ -35,6 +35,7 @@ const Profile: React.FC = () => {
     >
       <div>
         <p className="profile-text">
+          <span className="quote">" </span>
           Hello there, i love to build beautiful user friendly{" "}
           <span className="white">interfaces</span> that follow Web Content
           Accessibility guidelines. Beyond coding, I have a flair for{" "}
@@ -58,9 +59,11 @@ const Profile: React.FC = () => {
           fuels my inspiration and hitting the{" "}
           <span className="white">gym</span> regularly to stay active and
           focused. So excited to share my portfolio with you. Alright ...thats
-          enough introduction why don't you have a look around
+          enough introduction why don't you have a look around 
+          <span className="quote"> "</span>
         </p>
       </div>
+      {/* 
       <div className="image-container">
         <img
           className="image"
@@ -76,6 +79,7 @@ const Profile: React.FC = () => {
           alt="A man smiling"
         />
       </div>
+      */}
     </section>
   );
 };

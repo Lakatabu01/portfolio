@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import { useState, useEffect } from "react";
+import Icon from '@mdi/react';
+import { mdiArrowRightThin } from '@mdi/js';
 import {
   waldo1,
   waldo2,
@@ -108,14 +110,15 @@ const MyProjects: React.FC = () => {
               <button className="code-btn"> View code</button>
             </a>
 
-            <p>
+            <div>
               <a href="https://lakatabu01.github.io/where-is-waldo/" 
               className="preview
             ">
                 {" "}
-                Preview &#8594;
+              <p>Preview</p>  
+                <Icon path={mdiArrowRightThin} size={1}  />
               </a>
-            </p>
+            </div>
             
           </div>
         </div>
@@ -169,13 +172,14 @@ const MyProjects: React.FC = () => {
               <button className="code-btn"> View code</button>
             </a>
 
-            <p>
-              <a href="https://lakatabu01.github.io/cv-application/" 
+            <div>
+              <a href="https://lakatabu01.github.io/shopping-cart/" 
               className="preview
             ">
-                Preview &#8594;
+               <p>Preview </p> 
+               <Icon path={mdiArrowRightThin} size={1}  />
               </a>{" "}
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -228,14 +232,15 @@ const MyProjects: React.FC = () => {
               <button className="code-btn">View code</button>
             </a>
 
-            <p>
+            <div>
               {" "}
               <a href="https://lakatabu01.github.io/memory-card/" 
               className="preview
             ">
-                Preview &#8594;
+              <p>Preview</p>  
+              <Icon path={mdiArrowRightThin} size={1}  />
               </a>{" "}
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -284,14 +289,15 @@ const MyProjects: React.FC = () => {
               <button className="code-btn"> View code</button>
             </a>
 
-            <p>
+            <div>
               {" "}
               <a href="https://lakatabu01.github.io/cv-application/" 
               className="preview
             ">
-                Preview &#8594;
+               <p>Preview </p> 
+               <Icon path={mdiArrowRightThin} size={1}  />
               </a>{" "}
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -343,14 +349,16 @@ const MyProjects: React.FC = () => {
               <button className="code-btn">View code</button>
             </a>
 
-            <p>
+            <div>
               {" "}
               <a href="https://lakatabu01.github.io/weather-app/"
               className="preview
               ">
-                Preview &#8594;
+               <p>Preview</p>
+               <Icon path={mdiArrowRightThin} size={1}  />
+                
               </a>{" "}
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -399,15 +407,17 @@ const MyProjects: React.FC = () => {
               <button className="code-btn">View code</button>
             </a>
 
-            <p>
+            <div>
               {" "}
               <a href="https://lakatabu01.github.io/tic-tac-toe/"
               className="preview
               "
               >
-                Preview &#8594;
+                <p>Preview</p>
+                <Icon path={mdiArrowRightThin} size={1}  />
+                 
               </a>{" "}
-            </p>
+            </div>
           </div>
         </div>
       </section>

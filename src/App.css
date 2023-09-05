@@ -401,6 +401,11 @@ h1 {
   width: 70vw;
 }
 
+.quote{
+  font-size: 2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .profile {
   display: flex;
   padding: 5rem 2em 2em 2em;
@@ -467,7 +472,7 @@ h1 {
 }
 
 .top-buttons {
-  margin: 2em;
+  margin: o.5em 2em 2em 2em;
   display: flex;
   width: 30%;
 }
@@ -505,6 +510,9 @@ h1 {
 .preview {
   font-size: large;
   padding-left: 2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .preview:hover {
