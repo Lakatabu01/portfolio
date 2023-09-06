@@ -1,9 +1,7 @@
 import React, { useRef } from "react";
-import image from "../assets/profile-image/IMG-1360_f8rd4s_c_scale,w_1000.jpg";
-import image1 from "../assets/profile-image/IMG-1360_f8rd4s_c_scale,w_200.jpg";
-import image2 from "../assets/profile-image/IMG-1360_f8rd4s_c_scale,w_487.jpg";
-import image3 from "../assets/profile-image/IMG-1360_f8rd4s_c_scale,w_707.jpg";
-import image4 from "../assets/profile-image/IMG-1360_f8rd4s_c_scale,w_886.jpg";
+//import { programmer, programmer1 } from "./PhotoImports";
+
+import {cartoon, cartoon1, cartoon2, cartoon3, cartoon4, cartoon5, cartoon6, cartoon7, cartoon8} from "./PhotoImports";
 import { useState, useEffect } from "react";
 
 const Profile: React.FC = () => {
@@ -33,7 +31,8 @@ const Profile: React.FC = () => {
       ref={targetElementRef}
       className={`profile ${isVisible ? "slider" : ""}`}
     >
-      <div>
+    <div className="about">
+      <div className="all-profile-text">
         <p className="profile-text">
           <span className="quote">" </span>
           Hello there, i love to build beautiful user friendly{" "}
@@ -63,23 +62,35 @@ const Profile: React.FC = () => {
           <span className="quote"> "</span>
         </p>
       </div>
-      {/* 
+    </div>
+      
       <div className="image-container">
-        <img
-          className="image"
-          sizes=" (max-width: 768px) 80vw, (max-width: 900px) 80vw, (max-width: 1400px) 40vw, 400px"
-          srcSet={`
-            ${image1} 200w,
-            ${image2} 487w,
-            ${image3} 707w,
-            ${image4} 886w,
-            ${image} 1000w
-            `}
-          src={image}
-          alt="A man smiling"
-        />
+      
+  <img
+className="image"
+sizes=" (max-width: 768px) 80vw, (max-width: 900px) 80vw, (max-width: 1400px) 40vw, 400px"
+srcSet={`
+${cartoon4} 200w,
+${cartoon5}  396w,
+${cartoon6}  525w,
+${cartoon7}  704w,
+${cartoon8}  872w,
+${cartoon} 1014w,
+${cartoon1} 1305w,
+${cartoon2} 1359w,
+${cartoon3} 1400w
+`}
+src={cartoon3}
+
+alt="Animation of a programmer at his workstation" />
+         
       </div>
-      */}
+
+      <div>
+      
+      </div>
+
+     
     </section>
   );
 };

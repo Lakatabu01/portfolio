@@ -413,9 +413,19 @@ h1 {
   align-items: center;
 }
 
+.all-profile-text{
+  width: 80%;
+}
+
+.about{
+  display: flex;
+  justify-content: center;
+}
+
 .profile-text {
   color: rgb(170, 170, 170);
   font-size: 1.2em;
+  
 }
 
 .image {
