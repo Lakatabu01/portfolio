@@ -8,7 +8,7 @@ const Footer = () => {
           href="mailto:bamgbadeolanrewaju@gmail.com"
           aria-label="link to send me an email"
         >
-          <button className="email-btn"> Send me a mail</button>
+          <button className="email-btn"> Send me an email</button>
         </a>
       </section>
 
