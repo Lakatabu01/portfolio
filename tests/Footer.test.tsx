@@ -1,4 +1,4 @@
-import { getByText, render, screen } from "@testing-library/react";
+import { getByText, render } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 import Footer from "../src/components/Footer";
 import React from "react";

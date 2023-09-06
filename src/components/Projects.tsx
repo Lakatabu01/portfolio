@@ -55,6 +55,7 @@ const MyProjects: React.FC = () => {
 
   return (
     <div
+      data-testid="projects"
       ref={targetElementRef}
       className={`projects ${isVisible ? "swirl-in-fwd" : ""}`}
     >

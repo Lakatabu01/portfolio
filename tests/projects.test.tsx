@@ -17,6 +17,6 @@ describe("Test project component", () => {
     const numberOfProjects =
       getByTestId("projects").querySelectorAll("section").length;
 
-    expect(numberOfProjects).toBe(4);
+    expect(numberOfProjects).toBe(6);
   });
 });
