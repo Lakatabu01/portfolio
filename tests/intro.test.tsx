@@ -1,4 +1,4 @@
-import { getByTestId, render, screen } from "@testing-library/react";
+import { getByTestId, render } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 import React from "react";
 import Intro from "../src/components/Intro";
