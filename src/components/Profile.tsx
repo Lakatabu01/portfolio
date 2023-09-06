@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-//import { programmer, programmer1 } from "./PhotoImports";
 
 import {cartoon, cartoon1, cartoon2, cartoon3, cartoon4, cartoon5, cartoon6, cartoon7, cartoon8} from "./PhotoImports";
 import { useState, useEffect } from "react";
