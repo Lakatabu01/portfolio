@@ -87,11 +87,6 @@ import posts8 from "../assets/blog-post3/chris-ried-ieic5Tq8YMk-unsplash_1_zezfs
 export { posts6, posts7, posts8 };
 
 
-import programmer from "../assets/the-profile-image/undraw_Programming_re_kg9v_xfal7j_c_scale,w_1027.png"
-import programmer1 from "../assets/the-profile-image/undraw_Programming_re_kg9v_xfal7j_c_scale,w_200.png"
-
-export {programmer, programmer1}
-
 import cartoon from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1014.jpg"
 import cartoon1 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1305.jpg"
 import cartoon2 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1359.jpg"

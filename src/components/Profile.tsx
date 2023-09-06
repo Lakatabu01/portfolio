@@ -66,29 +66,26 @@ const Profile: React.FC = () => {
       
       <div className="image-container">
       
-  <img
-className="image"
-sizes=" (max-width: 768px) 80vw, (max-width: 900px) 80vw, (max-width: 1400px) 40vw, 400px"
-srcSet={`
-${cartoon4} 200w,
-${cartoon5}  396w,
-${cartoon6}  525w,
-${cartoon7}  704w,
-${cartoon8}  872w,
-${cartoon} 1014w,
-${cartoon1} 1305w,
-${cartoon2} 1359w,
-${cartoon3} 1400w
-`}
-src={cartoon3}
+         <img
+          className="image"
+          sizes=" (max-width: 768px) 80vw, (max-width: 900px) 80vw, (max-width: 1400px) 40vw, 400px"
+          srcSet={`
+          ${cartoon4} 200w,
+          ${cartoon5}  396w,
+          ${cartoon6}  525w,
+          ${cartoon7}  704w,
+          ${cartoon8}  872w,
+          ${cartoon} 1014w,
+          ${cartoon1} 1305w,
+          ${cartoon2} 1359w,
+          ${cartoon3} 1400w
+          `}
+          src={cartoon3}
 
-alt="Animation of a programmer at his workstation" />
-         
+          alt="Animation of a programmer at his workstation" />
       </div>
 
-      <div>
       
-      </div>
 
      
     </section>

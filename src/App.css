@@ -482,7 +482,7 @@ h1 {
 }
 
 .top-buttons {
-  margin: o.5em 2em 2em 2em;
+  margin: 2em 2em 2em 2em;
   display: flex;
   width: 30%;
 }
@@ -905,6 +905,10 @@ a {
 
   button {
     cursor: pointer;
+  }
+
+  .all-profile-text{
+    width: 100%;
   }
 
   .header {

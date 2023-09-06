@@ -1,6 +1,8 @@
 import React from "react";
 import { Posts3, Posts4, Posts5 } from "./PhotoImports";
 import { posts6, posts7, posts8 } from "./PhotoImports";
+import Icon from '@mdi/react';
+import { mdiArrowRightThin } from '@mdi/js';
 
 const BlogPosts: React.FC = () => {
   return (
@@ -24,14 +26,15 @@ ${Posts5} 640w
           <div className="blog-details">
             <p>Commit your code early!</p>
             <div>
-              <p>
+              <div>
                 <a href="https://geekspeak.hashnode.dev/commit-your-code-early"
                 className="preview
                 "
                 >
-                  Preview &#8594;
+                 <p>Preview</p>  
+                 <Icon path={mdiArrowRightThin} size={1}  />
                 </a>
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -52,14 +55,15 @@ ${Posts5} 640w
           <div className="blog-details">
             <p>Understanding React components and how it works</p>
             <div>
-              <p>
+              <div>
                 <a href="https://geekspeak.hashnode.dev/understanding-react-components-and-how-it-works"
                 className="preview
                 "
                 >
-                  Preview &#8594;
+                <p>Preview</p>  
+                <Icon path={mdiArrowRightThin} size={1}  />
                 </a>{" "}
-              </p>
+              </div>
             </div>
           </div>
         </div>
