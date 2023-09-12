@@ -62,7 +62,7 @@ const MyProjects: React.FC = () => {
       <h1>My Projects</h1>
       <section className="single-project">
         <div>
-          <h3>Where is Waldo app</h3>
+          <h3>Photo tagging app</h3>
           <p>
             This project is a "Where is Waldo" game that allows users to find
             Waldo and his friends in a busy scene. The app is built using React,

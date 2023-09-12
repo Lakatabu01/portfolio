@@ -14,6 +14,8 @@ import Skills from "./components/Skills";
 import BlogPosts from "./components/BlogPosts";
 import Footer from "./components/Footer";
 import Social from "./components/Social";
+import { H } from 'highlight.run';
+
 
 //Type declaration for componentRefs function
 interface ComponentRefs {
@@ -58,6 +60,23 @@ const App: React.FC = () => {
     if (componentRef.current) {
       componentRef.current.scrollIntoView({ behavior: "smooth" });
     }
+
+    //initialize highlight.io
+    H.init('zg0j7ld9', {
+      serviceName: "frontend-app",
+      tracingOrigins: true,
+      networkRecording: {
+        enabled: true,
+        recordHeadersAndBody: true,
+        urlBlocklist: [
+          // insert full or partial urls that you don't want to record here
+          // Out of the box, Highlight will not record these URLs (they can be safely removed):
+          "https://www.googleapis.com/identitytoolkit",
+          "https://securetoken.googleapis.com",
+        ],
+      },
+    });
+
   };
 
   return (
