@@ -86,15 +86,43 @@ import posts8 from "../assets/blog-post3/chris-ried-ieic5Tq8YMk-unsplash_1_zezfs
 
 export { posts6, posts7, posts8 };
 
+import cartoon from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1014.jpg";
+import cartoon1 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1305.jpg";
+import cartoon2 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1359.jpg";
+import cartoon3 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1400.jpg";
+import cartoon4 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_200.jpg";
+import cartoon5 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_396.jpg";
+import cartoon6 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_525.jpg";
+import cartoon7 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_704.jpg";
+import cartoon8 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_872.jpg";
 
-import cartoon from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1014.jpg"
-import cartoon1 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1305.jpg"
-import cartoon2 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1359.jpg"
-import cartoon3 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_1400.jpg"
-import cartoon4 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_200.jpg"
-import cartoon5 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_396.jpg"
-import cartoon6 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_525.jpg"
-import cartoon7 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_704.jpg"
-import cartoon8 from "../assets/profile-picture/5483064_2842579_hra8fd_c_scale,w_872.jpg"
+export {
+  cartoon,
+  cartoon1,
+  cartoon2,
+  cartoon3,
+  cartoon4,
+  cartoon5,
+  cartoon6,
+  cartoon7,
+  cartoon8,
+};
 
-export {cartoon, cartoon1, cartoon2, cartoon3, cartoon4, cartoon5, cartoon6, cartoon7, cartoon8}
+import axia from "../assets/axia-africa/Axia-africa_olvvlt_c_scale,w_200.png";
+import axia1 from "../assets/axia-africa/Axia-africa_olvvlt_c_scale,w_800.png";
+
+import axia2 from "../assets/axia-africa2/Axia-africa2_u37gbk_c_scale,w_200.png";
+import axia3 from "../assets/axia-africa2/Axia-africa2_u37gbk_c_scale,w_509.png";
+import axia4 from "../assets/axia-africa2/Axia-africa2_u37gbk_c_scale,w_725.png";
+import axia5 from "../assets/axia-africa2/Axia-africa2_u37gbk_c_scale,w_800.png";
+
+export { axia, axia1, axia2, axia3, axia4, axia5 };
+
+import enterprise from "../assets/open-enterprise/Open-Enterprise_jf1pwg_c_scale,w_200.png";
+import enterprise1 from "../assets/open-enterprise/Open-Enterprise_jf1pwg_c_scale,w_608.png";
+import enterprise2 from "../assets/open-enterprise/Open-Enterprise_jf1pwg_c_scale,w_800.png";
+
+import enterprise3 from "../assets/Open-Enterprise2/Open-Enterprise2_ygitmb_c_scale,w_200.png";
+import enterprise4 from "../assets/Open-Enterprise2/Open-Enterprise2_ygitmb_c_scale,w_800.png";
+
+export { enterprise, enterprise1, enterprise2, enterprise3, enterprise4 };

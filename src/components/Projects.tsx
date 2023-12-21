@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useState, useEffect } from "react";
-import Icon from '@mdi/react';
-import { mdiArrowRightThin } from '@mdi/js';
+import Icon from "@mdi/react";
+import { mdiArrowRightThin } from "@mdi/js";
 import {
   waldo1,
   waldo2,
@@ -21,6 +21,14 @@ import { cv, cv1, cv2, cv3, cv4 } from "./PhotoImports";
 import { weather, weather1, weather2 } from "./PhotoImports";
 import { weather3, weather4, weather5 } from "./PhotoImports";
 import { tic, tic1, tic2, tic3 } from "./PhotoImports";
+import { axia, axia1, axia2, axia3, axia4, axia5 } from "./PhotoImports";
+import {
+  enterprise,
+  enterprise1,
+  enterprise2,
+  enterprise3,
+  enterprise4,
+} from "./PhotoImports";
 
 const MyProjects: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -57,9 +65,121 @@ const MyProjects: React.FC = () => {
     <div
       data-testid="projects"
       ref={targetElementRef}
-      className={`projects ${isVisible ? "swirl-in-fwd" : ""}`}
-    >
+      className={`projects ${isVisible ? "swirl-in-fwd" : ""}`}>
       <h1>My Projects</h1>
+
+      <section className="single-project">
+        <div>
+          <h3>Axia Africa</h3>
+          <p>
+            Inspired by an original design, explore the world of online
+            education through my take on a bootcamp lead capture page. built
+            with React and Vite framework, this responsive design offers a
+            seamless browsing experience. Tailwind CSS was used for styling,
+            making it visually appealing across devices.
+          </p>
+        </div>
+
+        <div>
+          <div className="img-grp">
+            <img
+              className="project-image"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
+              srcSet={`
+            ${axia} 200w,
+            ${axia1} 800w,
+          `}
+              src={axia2}
+              alt="Screenshot of Axia Africa Landing page"
+            />
+
+            <img
+              className="project-image"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
+              srcSet={`
+              ${axia2} 200w,
+              ${axia5} 800w,
+`}
+              src={axia5}
+              alt=" screenshot of the input field of a weather"
+            />
+          </div>
+
+          <div className="project-links">
+            <a href="https://github.com/Lakatabu01/axia-africa">
+              <button className="code-btn">View code</button>
+            </a>
+
+            <div>
+              {" "}
+              <a
+                href="https://axia-africa-clone.vercel.app"
+                className="preview
+              ">
+                <p>Preview</p>
+                <Icon path={mdiArrowRightThin} size={1} />
+              </a>{" "}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="single-project">
+        <div>
+          <h3>Open Enterprise</h3>
+          <p>
+            Built using Next.js and TypeScript with a refined and user-friendly
+            UI. Styled with Tailwind CSS, this Showcase Page, an exact replica
+            of its Figma file, seamlessly merges design and functionality.
+            Experience open collaboration, rewarding contributors with
+            fractional ownership.
+          </p>
+        </div>
+
+        <div>
+          <div className="img-grp">
+            <img
+              className="project-image"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
+              srcSet={`
+              ${enterprise} 200w,
+              ${enterprise2} 800w
+`}
+              src={enterprise2}
+              alt="Screenshot of Open Enterprise landing page"
+            />
+
+            <img
+              className="project-image"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
+              srcSet={`
+              ${enterprise3} 200w,
+              ${enterprise4} 800w
+`}
+              src={enterprise4}
+              alt="Screenshot of Tic-tac-toe-game"
+            />
+          </div>
+
+          <div className="project-links">
+            <a href="https://github.com/Lakatabu01/open-enterprise">
+              <button className="code-btn">View code</button>
+            </a>
+
+            <div>
+              {" "}
+              <a
+                href="https://open-enterprise-lakatabu01.vercel.app"
+                className="preview
+              ">
+                <p>Preview</p>
+                <Icon path={mdiArrowRightThin} size={1} />
+              </a>{" "}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="single-project">
         <div>
           <h3>Photo tagging app</h3>
@@ -112,15 +232,15 @@ const MyProjects: React.FC = () => {
             </a>
 
             <div>
-              <a href="https://lakatabu01.github.io/where-is-waldo/" 
-              className="preview
+              <a
+                href="https://lakatabu01.github.io/where-is-waldo/"
+                className="preview
             ">
                 {" "}
-              <p>Preview</p>  
-                <Icon path={mdiArrowRightThin} size={1}  />
+                <p>Preview</p>
+                <Icon path={mdiArrowRightThin} size={1} />
               </a>
             </div>
-            
           </div>
         </div>
       </section>
@@ -133,10 +253,10 @@ const MyProjects: React.FC = () => {
             react-router-dom. The application has a user-friendly interface that
             allows users to browse through products with ease and add items to
             their cart. The application uses three routes The application was
-            built using the following technologies: React, react-router-dom,
-            Material UI and Shopping cart API. This project because demonstrates
-            my ability to use React and react-router-dom to build a functional
-            and user-friendly application.
+            built using the following technologies: React, react-router-dom and
+            Shopping cart API. This project demonstrates my ability to use React
+            and react-router-dom to build a functional and user-friendly
+            application.
           </p>
         </div>
 
@@ -174,11 +294,12 @@ const MyProjects: React.FC = () => {
             </a>
 
             <div>
-              <a href="https://lakatabu01.github.io/shopping-cart/" 
-              className="preview
+              <a
+                href="https://lakatabu01.github.io/shopping-cart/"
+                className="preview
             ">
-               <p>Preview </p> 
-               <Icon path={mdiArrowRightThin} size={1}  />
+                <p>Preview </p>
+                <Icon path={mdiArrowRightThin} size={1} />
               </a>{" "}
             </div>
           </div>
@@ -235,11 +356,12 @@ const MyProjects: React.FC = () => {
 
             <div>
               {" "}
-              <a href="https://lakatabu01.github.io/memory-card/" 
-              className="preview
+              <a
+                href="https://lakatabu01.github.io/memory-card/"
+                className="preview
             ">
-              <p>Preview</p>  
-              <Icon path={mdiArrowRightThin} size={1}  />
+                <p>Preview</p>
+                <Icon path={mdiArrowRightThin} size={1} />
               </a>{" "}
             </div>
           </div>
@@ -292,131 +414,12 @@ const MyProjects: React.FC = () => {
 
             <div>
               {" "}
-              <a href="https://lakatabu01.github.io/cv-application/" 
-              className="preview
+              <a
+                href="https://lakatabu01.github.io/cv-application/"
+                className="preview
             ">
-               <p>Preview </p> 
-               <Icon path={mdiArrowRightThin} size={1}  />
-              </a>{" "}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="single-project">
-        <div>
-          <h3>Weather forecast app</h3>
-          <p>
-            This is an application designed to provide real-time weather
-            conditions for any city across the globe. Constructed using a
-            combination of HTML, CSS, and vanilla JavaScript, this project
-            showcases my ability to create functional web applications from the
-            ground up. To optimize the development process, the project was
-            bundled using Webpack and transpiled with Babel. This ensures that
-            the application runs smoothly across various browsers enhancing its
-            accessibility and usability.
-          </p>
-        </div>
-
-        <div>
-          <div className="img-grp">
-            <img
-              className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
-              srcSet={`
-            ${weather} 200w,
-            ${weather1} 653w,
-            ${weather2} 800w
-`}
-              src={weather2}
-              alt="Screenshot of weaather app"
-            />
-
-            <img
-              className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
-              srcSet={`
-              ${weather3} 200w,
-              ${weather4} 733w,
-              ${weather5} 800w
-`}
-              src={weather5}
-              alt=" screenshot of the input field of a weather"
-            />
-          </div>
-
-          <div className="project-links">
-            <a href="https://github.com/Lakatabu01/weather-app">
-              <button className="code-btn">View code</button>
-            </a>
-
-            <div>
-              {" "}
-              <a href="https://lakatabu01.github.io/weather-app/"
-              className="preview
-              ">
-               <p>Preview</p>
-               <Icon path={mdiArrowRightThin} size={1}  />
-                
-              </a>{" "}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="single-project">
-        <div>
-          <h3>Tic-tac-toe</h3>
-          <p>
-            I developed a Tic Tac Toe game playable between two players or
-            against an AI opponent, utilizing HTML, CSS, and JavaScript. Players
-            take turns placing their X or O symbol, aiming to achieve three in a
-            row for victory. The game has a user-friendly interface, an AI
-            opponent, different gaming modes, and the ability to reload
-            progress. Its foundation in HTML, CSS, and JavaScript showcases my
-            skills and ability to craft interactive applications.
-          </p>
-        </div>
-
-        <div>
-          <div className="img-grp">
-            <img
-              className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
-              srcSet={`
-              ${tic} 200w,
-              ${tic1} 800w
-`}
-              src={tic1}
-              alt="Screenshot of Tic-tac-toe-game"
-            />
-
-            <img
-              className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
-              srcSet={`
-              ${tic2} 200w,
-              ${tic3} 800w
-`}
-              src={tic1}
-              alt="Screenshot of Tic-tac-toe-game"
-            />
-          </div>
-
-          <div className="project-links">
-            <a href="https://github.com/Lakatabu01/tic-tac-toe">
-              <button className="code-btn">View code</button>
-            </a>
-
-            <div>
-              {" "}
-              <a href="https://lakatabu01.github.io/tic-tac-toe/"
-              className="preview
-              "
-              >
-                <p>Preview</p>
-                <Icon path={mdiArrowRightThin} size={1}  />
-                 
+                <p>Preview </p>
+                <Icon path={mdiArrowRightThin} size={1} />
               </a>{" "}
             </div>
           </div>
