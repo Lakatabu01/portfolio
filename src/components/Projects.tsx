@@ -18,13 +18,9 @@ import {
 import { cart, cart1, cart2, cart3, cart4, cart5 } from "./PhotoImports";
 import { card, card1, card2, card3, card4, card5, card6 } from "./PhotoImports";
 import { cv, cv1, cv2, cv3, cv4 } from "./PhotoImports";
-import { weather, weather1, weather2 } from "./PhotoImports";
-import { weather3, weather4, weather5 } from "./PhotoImports";
-import { tic, tic1, tic2, tic3 } from "./PhotoImports";
-import { axia, axia1, axia2, axia3, axia4, axia5 } from "./PhotoImports";
+import { axia, axia1, axia2, axia5 } from "./PhotoImports";
 import {
   enterprise,
-  enterprise1,
   enterprise2,
   enterprise3,
   enterprise4,
