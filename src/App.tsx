@@ -14,8 +14,7 @@ import Skills from "./components/Skills";
 import BlogPosts from "./components/BlogPosts";
 import Footer from "./components/Footer";
 import Social from "./components/Social";
-import { H } from 'highlight.run';
-
+import { H } from "highlight.run";
 
 //Type declaration for componentRefs function
 interface ComponentRefs {
@@ -62,7 +61,7 @@ const App: React.FC = () => {
     }
 
     //initialize highlight.io
-    H.init('zg0j7ld9', {
+    H.init("zg0j7ld9", {
       serviceName: "frontend-app",
       tracingOrigins: true,
       networkRecording: {
@@ -76,7 +75,6 @@ const App: React.FC = () => {
         ],
       },
     });
-
   };
 
   return (
@@ -96,8 +94,7 @@ const App: React.FC = () => {
                   onClick={() => {
                     setDropDown(false);
                     scrollToComponent("component1");
-                  }}
-                >
+                  }}>
                   About
                 </button>{" "}
               </li>
@@ -108,8 +105,7 @@ const App: React.FC = () => {
                   onClick={() => {
                     setDropDown(false);
                     scrollToComponent("component2");
-                  }}
-                >
+                  }}>
                   Contact
                 </button>
               </li>
@@ -117,8 +113,7 @@ const App: React.FC = () => {
                 {" "}
                 <button
                   onClick={() => scrollToComponent("component3")}
-                  className="nav-button"
-                >
+                  className="nav-button">
                   Skills
                 </button>{" "}
               </li>
@@ -129,8 +124,7 @@ const App: React.FC = () => {
                   onClick={() => {
                     setDropDown(false);
                     scrollToComponent("component4");
-                  }}
-                >
+                  }}>
                   Projects
                 </button>{" "}
               </li>
@@ -141,8 +135,7 @@ const App: React.FC = () => {
                   onClick={() => {
                     setDropDown(false);
                     scrollToComponent("component5");
-                  }}
-                >
+                  }}>
                   Blogs
                 </button>{" "}
               </li>
@@ -153,8 +146,7 @@ const App: React.FC = () => {
             <button
               aria-label="menu-button"
               onClick={handleDropDown}
-              className="menu-btn"
-            >
+              className="menu-btn">
               <Icon
                 path={!dropDown ? mdiMenu : mdiClose}
                 size={1}
@@ -171,8 +163,7 @@ const App: React.FC = () => {
                 onClick={() => {
                   setDropDown(false);
                   scrollToComponent("component1");
-                }}
-              >
+                }}>
                 About
               </button>
             </li>
@@ -181,8 +172,7 @@ const App: React.FC = () => {
                 onClick={() => {
                   setDropDown(false);
                   scrollToComponent("component2");
-                }}
-              >
+                }}>
                 Contact
               </button>
             </li>
@@ -191,8 +181,7 @@ const App: React.FC = () => {
                 onClick={() => {
                   setDropDown(false);
                   scrollToComponent("component3");
-                }}
-              >
+                }}>
                 Skills
               </button>
             </li>
@@ -201,8 +190,7 @@ const App: React.FC = () => {
                 onClick={() => {
                   setDropDown(false);
                   scrollToComponent("component4");
-                }}
-              >
+                }}>
                 Projects
               </button>
             </li>
@@ -211,8 +199,7 @@ const App: React.FC = () => {
                 onClick={() => {
                   setDropDown(false);
                   scrollToComponent("component5");
-                }}
-              >
+                }}>
                 Blogs
               </button>
             </li>

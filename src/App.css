@@ -435,7 +435,7 @@ h1 {
 .resume-button,
 .hire-me-button {
   border-radius: 100px;
-  padding: 1em;
+  padding: 0.5em 1em 0.5em 1em;
   color: #ffffff;
   cursor: pointer;
   font-family: CircularStd, sans-serif;
@@ -504,6 +504,8 @@ h1 {
 .project-image {
   border-radius: 50px;
   padding: 1em;
+  height: 30vh;
+  width: 25vw;
 }
 
 .project-links {
@@ -907,6 +909,11 @@ a {
 
   .all-profile-text{
     width: 100%;
+  }
+
+  .project-image{
+    width: 90vw;
+    height: 25vh;
   }
 
   .header {
