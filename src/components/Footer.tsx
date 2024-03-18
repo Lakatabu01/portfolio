@@ -6,8 +6,7 @@ const Footer = () => {
 
         <a
           href="mailto:bamgbadeolanrewaju@gmail.com"
-          aria-label="link to send me an email"
-        >
+          aria-label="link to send me an email">
           <button className="email-btn"> Send me an email</button>
         </a>
       </section>
@@ -29,7 +28,7 @@ const Footer = () => {
       </div>
 
       <div>
-        <p className="last">© Olanrewaju 2023</p>
+        <p className="last">© Olanrewaju 2024</p>
       </div>
     </footer>
   );
