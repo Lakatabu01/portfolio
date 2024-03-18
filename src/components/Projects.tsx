@@ -25,6 +25,8 @@ import {
   enterprise3,
   enterprise4,
 } from "./PhotoImports";
+import talentPool1 from "../assets/talent-pool/Talent-pool (1).png";
+import talentPool2 from "../assets/talent-pool/Talent-pool.png";
 
 const MyProjects: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -66,50 +68,42 @@ const MyProjects: React.FC = () => {
 
       <section className="single-project">
         <div>
-          <h3>Axia Africa</h3>
+          <h3>Talent Pool</h3>
           <p>
-            Inspired by an original design, explore the world of online
-            education through my take on a bootcamp lead capture page. built
-            with React and Vite framework, this responsive design offers a
-            seamless browsing experience. Tailwind CSS was used for styling,
-            making it visually appealing across devices.
+            This ongoing real life project represents a collaborative effort,
+            involving coordination with various team members, from designers to
+            project managers. Through Next.js, TypeScript, Tailwind CSS and
+            other technologies I've developed the frontend section of a platform
+            that promises to redefine tech talent acquisition. Its blend of
+            design finesse, seamless functionality, and collaborative features
+            positions it as a viable solution in the evolving recruitment
+            landscape
           </p>
         </div>
 
         <div>
           <div className="img-grp">
             <img
+              src={talentPool1}
+              alt="talent pool landing page"
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
-              srcSet={`
-            ${axia} 200w,
-            ${axia1} 800w,
-          `}
-              src={axia2}
-              alt="Screenshot of Axia Africa Landing page"
             />
-
             <img
+              src={talentPool2}
+              alt="talent pool landing page"
               className="project-image"
-              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
-              srcSet={`
-              ${axia2} 200w,
-              ${axia5} 800w,
-`}
-              src={axia5}
-              alt=" screenshot of the input field of a weather"
             />
           </div>
 
           <div className="project-links">
-            <a href="https://github.com/Lakatabu01/axia-africa">
+            <a href="https://github.com/Lakatabu01/talent-pool">
               <button className="code-btn">View code</button>
             </a>
 
             <div>
               {" "}
               <a
-                href="https://axia-africa-clone.vercel.app"
+                href="https://talent-pool-rose.vercel.app/"
                 className="preview
               ">
                 <p>Preview</p>
@@ -166,6 +160,62 @@ const MyProjects: React.FC = () => {
               {" "}
               <a
                 href="https://open-enterprise-lakatabu01.vercel.app"
+                className="preview
+              ">
+                <p>Preview</p>
+                <Icon path={mdiArrowRightThin} size={1} />
+              </a>{" "}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="single-project">
+        <div>
+          <h3>Axia Africa</h3>
+          <p>
+            Inspired by an original design, explore the world of online
+            education through my take on a bootcamp lead capture page. built
+            with React and Vite framework, this responsive design offers a
+            seamless browsing experience. Tailwind CSS was used for styling,
+            making it visually appealing across devices.
+          </p>
+        </div>
+
+        <div>
+          <div className="img-grp">
+            <img
+              className="project-image"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
+              srcSet={`
+            ${axia} 200w,
+            ${axia1} 800w,
+          `}
+              src={axia2}
+              alt="Screenshot of Axia Africa Landing page"
+            />
+
+            <img
+              className="project-image"
+              sizes="(max-width: 768px) 90vw, (max-width: 1400px) 25vw, 30vw"
+              srcSet={`
+              ${axia2} 200w,
+              ${axia5} 800w,
+`}
+              src={axia5}
+              alt=" screenshot of the input field of a weather"
+            />
+          </div>
+
+          <div className="project-links">
+            <a href="https://github.com/Lakatabu01/axia-africa">
+              <button className="code-btn">View code</button>
+            </a>
+
+            <div>
+              {" "}
+              <a
+                href="https://axia-africa-clone.vercel.app"
                 className="preview
               ">
                 <p>Preview</p>
